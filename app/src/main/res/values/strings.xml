@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HamzaListView</string>
+    <string name="muhammad_ali">Muhammad Ali</string>
+    <string name="_8_30_pm">8:30 pm</string>
+    <string name="name">Name</string>
+    <string name="country">country</string>
+    <string name="phone">phone</string>
+</resources>
