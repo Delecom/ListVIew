@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 
 class MyAdaptor( private val context: Activity,private val arrayList: ArrayList<User>): ArrayAdapter<User>(context,
            R.layout.list_view,arrayList) {
@@ -24,6 +25,10 @@ class MyAdaptor( private val context: Activity,private val arrayList: ArrayList<
         imageView.setImageResource(arrayList[position].imageId)
         textView.text = arrayList[position].name
         lastMsgtime.text = arrayList[position].lasMesTime
+
+        imageView.setOnClickListener {
+            Toast.makeText(context,arrayList[position].name,Toast.LENGTH_SHORT).show()
+        }
         return view
     }
 }
